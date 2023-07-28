@@ -11,21 +11,21 @@ Login to the VM using Vagrantfile
 vagrant up
 vagrant ssh
 
-# Clone source code of Emart App
+#Clone source code of Emart App
 git clone https://github.com/devopshydclub/emartapp.git
 ls
 cd emartapp/
 ls
 
-# Bring up  containers from docker-compose file
+#Bring up  containers from docker-compose file
 vim docker-compose.yaml
 docker-compose up -d
 docker ps
 ip addr show
 
-# Go to browser enter http://VMIp:80
+#Go to browser enter http://VMIp:80
 
-# Clean up
+#Clean up
 docker-compose down
 
 
